@@ -287,10 +287,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://apisinpaginacion7.onrender.com/api/v1/personas/1",
+							"raw": "https://parciasecotaro1.onrender.com/api/v1/personas/1",
 							"protocol": "https",
 							"host": [
-								"apisinpaginacion7",
+								"parciasecotaro1",
 								"onrender",
 								"com"
 							],
@@ -310,10 +310,10 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "https://apisinpaginacion7.onrender.com/api/v1/personas",
+							"raw": "https://parciasecotaro1.onrender.com/api/v1/personas",
 							"protocol": "https",
 							"host": [
-								"apisinpaginacion7",
+								"parciasecotaro1",
 								"onrender",
 								"com"
 							],
@@ -332,21 +332,19 @@
 						"method": "POST",
 						"header": [],
 						"body": {
-							"mode": "formdata",
-							"formdata": [
-								{
-									"key": "1",
-									"value": "2",
-									"description": "a",
-									"type": "text"
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"nombre\": \"Hueva\",\r\n    \"apellido\": \"Boca\",\r\n    \"dni\": 12365456\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
 								}
-							]
+							}
 						},
 						"url": {
-							"raw": "https://apisinpaginacion7.onrender.com/api/v1/personas",
+							"raw": "https://parciasecotaro1.onrender.com/api/v1/personas",
 							"protocol": "https",
 							"host": [
-								"apisinpaginacion7",
+								"parciasecotaro1",
 								"onrender",
 								"com"
 							],
@@ -365,10 +363,10 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "https://apisinpaginacion7.onrender.com/api/v1/personas/1",
+							"raw": "https://parciasecotaro1.onrender.com/api/v1/personas/7",
 							"protocol": "https",
 							"host": [
-								"apisinpaginacion7",
+								"parciasecotaro1",
 								"onrender",
 								"com"
 							],
@@ -376,7 +374,7 @@
 								"api",
 								"v1",
 								"personas",
-								"1"
+								"7"
 							]
 						}
 					},
@@ -388,10 +386,10 @@
 						"method": "PUT",
 						"header": [],
 						"url": {
-							"raw": "https://apisinpaginacion6.onrender.com/api/v1/personas/1",
+							"raw": "https://parciasecotaro1.onrender.com/api/v1/personas/1",
 							"protocol": "https",
 							"host": [
-								"apisinpaginacion6",
+								"parciasecotaro1",
 								"onrender",
 								"com"
 							],
@@ -409,7 +407,28 @@
 					"name": "Search",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://parciasecotaro1.onrender.com/api/v1/personas/search?filtro=Boca",
+							"protocol": "https",
+							"host": [
+								"parciasecotaro1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"search"
+							],
+							"query": [
+								{
+									"key": "filtro",
+									"value": "Boca"
+								}
+							]
+						}
 					},
 					"response": []
 				},
@@ -419,27 +438,19 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8085/api/v1/personas/paged?page=0&size=5",
-							"protocol": "http",
+							"raw": "https://parciasecotaro1.onrender.com/api/v1/personas",
+							"protocol": "https",
 							"host": [
-								"localhost"
+								"parciasecotaro1",
+								"onrender",
+								"com"
 							],
-							"port": "8085",
 							"path": [
 								"api",
 								"v1",
-								"personas",
-								"paged"
+								"personas"
 							],
 							"query": [
-								{
-									"key": "page",
-									"value": "0"
-								},
-								{
-									"key": "size",
-									"value": "5"
-								},
 								{
 									"key": "sort",
 									"value": "id,asc",
@@ -459,7 +470,36 @@
 					"name": "Search Paged",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "https://parciasecotaro1.onrender.com/api/v1/personas/paged?page=0&size=1&sort=id,asc",
+							"protocol": "https",
+							"host": [
+								"parciasecotaro1",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"api",
+								"v1",
+								"personas",
+								"paged"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "1"
+								},
+								{
+									"key": "sort",
+									"value": "id,asc"
+								}
+							]
+						}
 					},
 					"response": []
 				}
